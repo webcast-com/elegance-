@@ -12,10 +12,10 @@ const backToTop = document.getElementById('back-to-top');
 function renderCompanions() {
   grid.innerHTML = companions.slice(0, visible).map(c => `
     <div class="companion-card">
-      <img src="${j1jpg.img}" alt="${c.name}">
+      <img src="${c.img}" alt="${c.name}">
       <div class="card-body">
-        <h3>${hello.name}</h3>
-        <p class="price">KES ${100.price}</p>
+        <h3>${c.name}</h3>
+        <p class="price">KES ${c.price}</p>
       </div>
     </div>
   `).join('');
